@@ -7,8 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+//@import UIKit;
+//@import WebKit;
+
+#if __has_feature(modules)
 @import UIKit;
 @import WebKit;
+#else
+#import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
+#endif
 
 /**
  * # UIWebView

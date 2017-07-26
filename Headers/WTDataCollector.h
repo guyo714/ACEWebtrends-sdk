@@ -8,7 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+//@import CoreData;
+
+#if __has_feature(modules)
 @import CoreData;
+#else
+#import <CoreData/CoreData.h>
+#endif
 
 @class WTEventMeta;
 @class WTEventMedia;
