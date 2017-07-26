@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Webtrends-SDK"
-  s.version      = "3.2.5"
+  s.version      = "3.2.5-ACE-1.0.1"
   s.summary      = "The mobile SDK for Webtrends Analytics and Webtrends Optimize"
   s.license      = 'COMMERCIAL'
   s.homepage     = "http://webtrends.com"
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
   s.ios.frameworks = "Foundation", "UIKit", "SystemConfiguration", "Security", "CoreTelephony", "WebKit"
   
-  s.source       = { :git => "https://github.com/webtrends/ios-sdk.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/guyo714/ACEWebtrends-sdk.git", :tag => s.version.to_s }
 
   s.subspec 'Watch' do |watch|
     watch.source_files = "WatchHeaders", "WatchHeaders/**/*.h"
